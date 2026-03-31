@@ -1,0 +1,53 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Get a free hosted Postgres database in seconds: `npx create-db`
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+model Animal{
+  id String @id @default(cuid())
+  name String
+  image String
+  disease Disease[] 
+
+}
+
+model Admin{
+  id String @id @default(cuid())
+  email  String @unique 
+  password String
+}
+
+model Disease{
+  id String @id @default(cuid())
+  name String
+  description String
+  treatment String
+  severity String
+  animalId String
+  animal Animal @relation(fields:[animalId],references:[id])
+  symptom Symptom[]
+
+}
+
+model Symptom{
+   id String @id @default(cuid())
+   name String
+   diseaseId String
+   disease Disease @relation(fields:[diseaseId],references:[id])
+
+}
+model Vet{
+  id String @id @default(cuid())
+  name String
+  phone String
+  address String
+  district String
+}
