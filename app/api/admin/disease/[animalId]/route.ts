@@ -1,5 +1,4 @@
 import {prisma} from '@/lib/prisma'
-import { error } from 'console'
 import { NextResponse,NextRequest } from 'next/server'
 export async function POST(request:NextRequest,{params}:{params:{animalId:string}})
 {

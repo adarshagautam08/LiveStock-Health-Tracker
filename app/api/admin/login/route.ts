@@ -1,5 +1,7 @@
 import { prisma } from '@/lib/prisma';
 import bcrypt from 'bcryptjs';
+import jwt from 'jsonwebtoken'
+import { cookies } from 'next/headers';
 
 import { NextRequest ,NextResponse } from 'next/server';
 export async function POST(request:NextRequest) {
@@ -28,6 +30,17 @@ export async function POST(request:NextRequest) {
     {
         return NextResponse.json({error:"Password Invalid"},{status:400})
     }
+    const token=jwt.sign(
+        {id:admin.id ,email:admin.email},
+        process.env.JWT_SECRET!,
+        {expiresIn:'1d'}
+    )
+    const cookiesStore=await cookies()
+    cookiesStore.set('admin_token',token,{
+        httpOnly:true,
+        maxAge:60*60*24,
+        path:'/'
+    })
     return NextResponse.json({message:"Login Sucessful"},{status:200})
     }
 
