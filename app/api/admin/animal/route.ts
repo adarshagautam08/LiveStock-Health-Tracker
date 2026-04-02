@@ -8,7 +8,7 @@ export async function POST(request:NextRequest)
         const body=await request.json()
         const {name,image}=body
         //check if they are empty 
-        if(!name||!image)
+        if(!name)
         {
             return NextResponse.json({err:'Fill the data'},{status:400})
         }
@@ -18,7 +18,7 @@ export async function POST(request:NextRequest)
                 name
             }
         })
-        if(!animalName)
+        if(animalName)
         {
             return NextResponse.json({error:'the animal already exists '},{status:400})
         }

@@ -6,7 +6,7 @@ export async function POST(request:NextRequest,{params}:{params:{animalId:string
     try{
         const body=await request.json()
         const {name,treatment,description,severity}=body
-        const {animalId}=params
+        const {animalId}= await params
         //the data should not be empty 
         if(!name||!treatment||!description||!severity)
         {

@@ -7,7 +7,7 @@ export async function POST(request:NextRequest ,{params}:{params:{diseaseId:stri
         //take the data from the api
         const body=await request.json()
         const {name}=body
-        const diseaseId=params.diseaseId
+        const {diseaseId}=await params
         //check if the data are empty
         if(!name)
         {
