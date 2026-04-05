@@ -4,13 +4,15 @@ import UserNavbar from '../component/UserNavbar'
 export default async function Diagnose()
 {
   const animals=await prisma.animal.findMany()
-  const symptoms=await prisma.symptom.findMany()
+  
   return (
-    <div className="bg-white text-black h-screen" >
+    
+    <div className="bg-white text-black " >
       <UserNavbar/>
-    <div className=' flex justify-center flex-col items-center'>
-      <DiagnoseAnimal myList={animals} allsymptoms={symptoms} />
+    <div className=' flex  h-screen flex-col '>
+      <DiagnoseAnimal myList={animals}  />
     </div>
     </div>
+    
   )
 }

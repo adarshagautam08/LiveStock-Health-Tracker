@@ -1,5 +1,6 @@
 "use client";
 import { useEffect, useState } from "react";
+import { useRouter } from "next/navigation";
 
 type Animal = {
   id: string;
@@ -12,10 +13,12 @@ type Symptom = {
   name: string;
 };
 
-export default function DiagnoseAnimal({ myList,allsymptoms }: { myList: Animal[],allsymptoms:Symptom[] }) {
-  const [selectedAnimal, setSelectedAnimal] = useState<string>("");
-  const [symptoms, setSymptoms] = useState<Symptom[]>([]);
-  const [selectedSymptoms, setSelectedSymptoms] = useState<string[]>([]);
+export default function DiagnoseAnimal({ myList }: { myList: Animal[] }) {
+  const [selectedAnimal, setSelectedAnimal] = useState<string>("");//for animals 
+  const [symptoms, setSymptoms] = useState<Symptom[]>([]);//for the symptoms
+  const [selectedSymptoms, setSelectedSymptoms] = useState<string[]>([]);//for state
+
+  const router=useRouter()
 
   const animalEmojis: { [key: string]: string } = {
     Cow: "🐄",
@@ -33,15 +36,18 @@ export default function DiagnoseAnimal({ myList,allsymptoms }: { myList: Animal[
   useEffect(() => {
     if (!selectedAnimal) return;
     const fetchSymptoms = async () => {
+     
       try {
         const res = await fetch(`/api/animal/${selectedAnimal}/symptoms`);
         const data: Symptom[] = await res.json();
         setSymptoms(data);
+        console.log(data);
       } catch (err) {
         console.error(err);
       }
     };
     fetchSymptoms();
+
   }, [selectedAnimal]);
 
   const toggleSymptom = (symptomName: string) => {
@@ -52,10 +58,19 @@ export default function DiagnoseAnimal({ myList,allsymptoms }: { myList: Animal[
     }
   };
 
-  return (
-    <div className="max-w-2xl mx-auto px-4 py-8">
+  const getResult=()=>
+    {
+      
+      //check if the data is empty or not 
+      if(!selectedSymptoms||!selectedAnimal) return;
+      //send the data in the params 
+      router.push(`/diagnose/${selectedAnimal}?symptoms=${selectedSymptoms.join(",")}`)
+      
+    }  
 
-      {/* Step 1 */}
+  return (
+    <div className="max-w-2xl   mx-auto px-4 py-8">
+      {/* */}
       <div className="mb-8">
         <p className="text-sm font-medium text-gray-500 uppercase tracking-wide mb-4">
           Step 1 — Select Animal
@@ -72,66 +87,61 @@ export default function DiagnoseAnimal({ myList,allsymptoms }: { myList: Animal[
                     : "border-gray-200 hover:bg-[#e8f5ee] hover:border-[#2D6A4F]"
                 }`}
             >
-              <span className="text-2xl">{animalEmojis[item.name] || "🐾"}</span>
+              <span className="text-2xl">
+                {animalEmojis[item.name] || "🐾"}
+              </span>
               <p className="text-xs mt-1 text-gray-700">{item.name}</p>
             </div>
           ))}
         </div>
       </div>
 
-      {/* Step 2 - only shows after animal is selected */}
-      {selectedAnimal && (
-        <div className="mb-8">
-          <p className="text-sm font-medium text-gray-500 uppercase tracking-wide mb-4">
-            Step 2 — Select Symptoms
-          </p>
+      <div className="mb-8">
+        <p className="text-sm font-medium text-gray-500 uppercase tracking-wide mb-4">
+          Step 2 — Select Symptoms
+        </p>
 
-          {symptoms.length === 0 ? (
-            <p className="text-sm text-gray-400 text-center py-4">
-              No symptoms found for this animal
-            </p>
-          ) : (
-            <div className="grid grid-cols-2 gap-2">
-              {symptoms.map((symptom) => (
-                <div
-                  key={symptom.id}
-                  onClick={() => toggleSymptom(symptom.name)}
-                  className={`flex items-center gap-2 p-3 rounded-lg border cursor-pointer transition-all duration-200
+        {symptoms.length === 0 ? (
+          <p className="text-sm text-gray-400 text-center py-4">
+            No symptoms found for this animal
+          </p>
+        ) : (
+          <div className="grid grid-cols-2 gap-2">
+            {symptoms.map((symptom) => (
+              <div
+                key={symptom.id}
+                onClick={() => toggleSymptom(symptom.name)}
+                className={`flex items-center gap-2 p-3 rounded-lg border cursor-pointer transition-all duration-200
                     ${
                       selectedSymptoms.includes(symptom.name)
                         ? "bg-[#e8f5ee] border-[#2D6A4F]"
                         : "border-gray-200 hover:bg-gray-50"
                     }`}
-                >
-                  <div
-                    className={`w-4 h-4 rounded border flex items-center justify-center flex-shrink-0
+              >
+                <div
+                  className={`w-4 h-4 rounded border flex items-center justify-center flex-shrink-0
                       ${
                         selectedSymptoms.includes(symptom.name)
                           ? "bg-[#2D6A4F] border-[#2D6A4F]"
                           : "border-gray-300"
                       }`}
-                  >
-                    {selectedSymptoms.includes(symptom.name) && (
-                      <span className="text-white text-xs">✓</span>
-                    )}
-                  </div>
-                  <span className="text-sm text-gray-700">{symptom.name}</span>
+                >
+                  {selectedSymptoms.includes(symptom.name) && (
+                    <span className="text-white text-xs">✓</span>
+                  )}
                 </div>
-              ))}
-            </div>
-          )}
-        </div>
-      )}
-
-      {/* Step 3 - Diagnose button */}
+                <span className="text-sm text-gray-700">{symptom.name}</span>
+              </div>
+            ))}
+          </div>
+        )}
+      </div>
       {selectedAnimal && selectedSymptoms.length > 0 && (
-        <div>
+        <div onClick={getResult} >
           <p className="text-sm font-medium text-gray-500 uppercase tracking-wide mb-4">
             Step 3 — Diagnose
           </p>
-          <button
-            className="w-full py-3 bg-[#2D6A4F] hover:bg-[#235a3f] text-white font-medium rounded-xl transition-all duration-200"
-          >
+          <button className="w-full py-3 bg-[#2D6A4F] hover:bg-[#235a3f] text-white font-medium rounded-xl transition-all duration-200">
             Diagnose Now →
           </button>
         </div>
@@ -139,3 +149,4 @@ export default function DiagnoseAnimal({ myList,allsymptoms }: { myList: Animal[
     </div>
   );
 }
+
