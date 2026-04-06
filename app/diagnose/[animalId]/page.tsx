@@ -159,7 +159,7 @@ export default function DiagnosePage() {
 
         {/* Find vet button */}
         <Link
-          href="/vets"
+          href="/vet  "
           className="block w-full py-3 text-center border border-[#2D6A4F] text-[#2D6A4F] font-medium rounded-xl hover:bg-[#2D6A4F] hover:text-white transition-all duration-200 mt-2"
         >
           Find a Vet Near You →

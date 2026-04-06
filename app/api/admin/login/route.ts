@@ -39,7 +39,7 @@ export async function POST(request:NextRequest) {
     cookiesStore.set('admin_token',token,{
         httpOnly:true,
         maxAge:60*60*24,
-        path:'/'
+        path:'/admin'
     })
     return NextResponse.json({message:"Login Sucessful"},{status:200})
     }

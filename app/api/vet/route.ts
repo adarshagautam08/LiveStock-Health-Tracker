@@ -33,11 +33,11 @@ export async function POST(request:NextRequest)
 
 
 //get request for the all vet
-export async function GET( request:NextRequest)
+export async function GET( _request:NextRequest)
 {  
     try{
     const getVet=await prisma.vet.findMany()
-    return NextResponse.json({getVet},{status:201})
+    return NextResponse.json(getVet,{status:201})
     }
     catch(err:any)
     {
