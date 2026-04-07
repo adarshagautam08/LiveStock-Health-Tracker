@@ -5,7 +5,7 @@ export async function POST(request:NextRequest,{params}:{params:{animalId:string
     //using the try catch
     try{
         const body=await request.json()
-        const {name,treatment,description,severity}=body
+        const {name,treatment,description,severity,symptoms}=body
         const {animalId}= await params
         //the data should not be empty 
         if(!name||!treatment||!description||!severity)
@@ -23,10 +23,21 @@ export async function POST(request:NextRequest,{params}:{params:{animalId:string
                 animalId
             }
         })
+        //then add for the symptoms using the disease id
+        if(symptoms&&symptoms.length>0)
+        {
+            await prisma.symptom.createMany({
+                data:symptoms.map((s:string)=>({
+                    name:s,
+                    diseaseId:dieseseadded.id
+                }))
+            })
         return NextResponse.json({dieseseadded},{status:201})
         
     }
-    catch(err:any){
+}
+    catch(err:any)
+    {
         return NextResponse.json({error:err.message},{status:500})
     }
 }

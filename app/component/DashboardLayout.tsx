@@ -1,6 +1,6 @@
 "use client";
 import AddAnimal from "../component/AddAnimals";
-import AddDiseases from "../component/AddDiseases";
+import AddData from "../component/AddDiseases";
 import AddSymptoms from "../component/AddSymptoms";
 import AddVets from "../component/AddVets";
 import { useState } from "react";
@@ -15,8 +15,8 @@ export default function DashboardLayout() {
     switch (activePage) {
       case "animal":
         return <AddAnimal />;
-      case "disease":
-        return <AddDiseases />;
+      case "addData":
+        return <AddData />;
       case "symptoms":
         return <AddSymptoms />;
       case "vets":
@@ -25,15 +25,15 @@ export default function DashboardLayout() {
   };
 
   return (
-    <div className="text-black">
+    <div className="text-black h-full   ">
       {/**navbar */}
       <div className=" h-16 rounded-2xl flex px-4 text-2xl items-center bg-[#2D6A4F]">
         <h1 className="text-white font bold" >Welcome</h1>
       </div>
 
-      <div className="flex my-1 rounded-2xl  gap-1  ">
+      <div className="flex my-1 rounded-2xl h-[90%]  gap-1  ">
         {/**sidebar */}
-        <div className="w-[20%] rounded-2xl h-auto my-2 bg-gray-100   px-2 py-2">
+        <div className="w-[20%] rounded-2xl  my-2 bg-gray-100   px-2 py-2">
           <Link href={"/"} className=" ml-2 gap-2.5 flex items-center">
             <span className="text-xl">🐄</span>
             <span className="font-semibold text-black text-md tracking-tight">
@@ -42,7 +42,7 @@ export default function DashboardLayout() {
           </Link>
           <div className="flex  flex-col  ">
             <button
-              className={`h-10 border cursor-pointer  text-black rounded-2xl mt-2 mb-2 transition ${
+              className={`h-10 border rounded-lg cursor-pointer  text-black  mt-2 mb-2 transition ${
                 activePage === "animal"
                   ? "bg-[#4a8068] text-white "
                   : "text-black hover:bg-white"
@@ -53,18 +53,18 @@ export default function DashboardLayout() {
             </button>
 
             <button
-               className={`h-10 border  cursor-pointer text-black rounded-2xl mt-2 mb-2 transition ${
-                activePage === "disease"
+               className={`h-10 border rounded-lg  cursor-pointer text-black  mt-2 mb-2 transition ${
+                activePage === "addData"
                   ? "bg-[#4a8068] text-white"
                   : "text-black hover:bg-white"
               }`}
-              onClick={() => handleButton("disease")}
+              onClick={() => handleButton("addData")}
             >
-              Diseases
+              AllData
             </button>
 
             <button
-               className={`h-10 border cursor-pointer   text-black rounded-2xl mt-2 mb-2 transition ${
+               className={`h-10 border rounded-lg cursor-pointer   text-black  mt-2 mb-2 transition ${
                 activePage === "symptoms"
                   ? "bg-[#4a8068] text-white"
                   : "text-black hover:bg-white"
@@ -74,7 +74,7 @@ export default function DashboardLayout() {
               Symptoms
             </button>
             <button
-             className={`h-10 border cursor-pointer   rounded-2xl mt-2 mb-2 transition ${
+             className={`h-10 border rounded-lg cursor-pointer    mt-2 mb-2 transition ${
                 activePage === "vets"
                   ? "bg-[#4a8068] text-white "
                   : "text-black hover:bg-white"
@@ -87,7 +87,7 @@ export default function DashboardLayout() {
         </div>
 
         {/**main */}
-        <div className="w-[90%] rounded-2xl bg-gray-100 m-2  h-auto px-2 py-2">{renderPage()}</div>
+        <div className="w-[90%]  rounded-2xl bg-gray-100 m-2   px-2 py-2">{renderPage()}</div>
       </div>
     </div>
   );

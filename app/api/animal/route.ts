@@ -39,7 +39,7 @@ export async function POST(request:NextRequest)
 }
 
 //get all the animal 
-export async function GET(request:NextRequest) {
+export async function GET(_request:NextRequest) {
     try{
         const getAnimals=await prisma.animal.findMany()
         return NextResponse.json({getAnimals},{status:201})

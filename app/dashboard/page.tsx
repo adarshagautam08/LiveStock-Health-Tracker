@@ -16,7 +16,7 @@ export default async function DashboardPage() {
   }
 
   return (
-    <div className="p-6 bg-white h-screen">
+    <div className="p-6 h-screen bg-white ">
         <DashboardLayout/>
     </div>
   );

@@ -27,7 +27,7 @@ export async function middleware(request: NextRequest) {
   }
   try{
     //verify jwt 
-    jwt.verify(token,process.env.Jwt_Secret!);
+    jwt.verify(token,process.env.JWT_SECRET!);
     return NextResponse.next()
   }
   catch(err:any)
