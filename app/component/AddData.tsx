@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { toast } from "sonner";
 
 export default function AddData() {
   const [activeForm, setactiveForm] = useState(false);
@@ -18,8 +19,7 @@ export default function AddData() {
     setactiveForm((prev) => !prev);
   };
 
-  const postJob = async (e: React.FormEvent) => {
-    alert("click")
+  const postdata = async (e: React.FormEvent) => {
     e.preventDefault();
     const res = await fetch(`/api/disease/${form.animalid}`, {
       method: "POST",
@@ -32,6 +32,16 @@ export default function AddData() {
         symptoms:symptoms
       }), // send symptoms too
     });
+     if (res.ok) {
+      setForm({ diseaseName: "", treatment: "", severity: "", description: "", animalid: "" });
+      setSymptoms([""]);
+      setactiveForm(false);
+      toast.success("Disease added successfully!");
+    }
+    else {
+  toast.error("Failed to add disease.");
+}
+    
     const data = await res.json();
   console.log(data);
   };
@@ -59,7 +69,7 @@ export default function AddData() {
 
       {activeForm && (
         <div>
-          <form onSubmit={postJob} className="flex flex-col gap-4">
+          <form onSubmit={postdata} className="flex flex-col gap-4">
             <p className="text-gray-500 font-medium">Fill the data</p>
 
             <div className="flex flex-col gap-1">

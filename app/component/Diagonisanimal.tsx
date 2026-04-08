@@ -69,7 +69,7 @@ export default function DiagnoseAnimal({ myList }: { myList: Animal[] }) {
     }  
 
   return (
-    <div className="max-w-2xl   mx-auto px-4 py-8">
+    <div className="max-w-2xl h-screen   mx-auto px-4 py-8">
       {/* */}
       <div className="mb-8">
         <p className="text-sm font-medium text-gray-500 uppercase tracking-wide mb-4">

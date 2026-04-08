@@ -41,3 +41,22 @@ export async function POST(request:NextRequest,{params}:{params:{animalId:string
         return NextResponse.json({error:err.message},{status:500})
     }
 }
+
+export async function GET(
+  _request: NextRequest,
+  { params }: { params: { animalId: string } }
+) {
+  try {
+    const { animalId } =await params;
+
+    const diseases = await prisma.disease.findMany({
+      where: {
+        animalId: animalId,
+      },
+    });
+
+    return NextResponse.json(diseases, { status: 200 });
+  } catch (err: any) {
+    return NextResponse.json({ error: err.message }, { status: 500 });
+  }
+}

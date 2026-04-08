@@ -1,7 +1,7 @@
 "use client";
 import AddAnimal from "../component/AddAnimals";
-import AddData from "../component/AddDiseases";
-import AddSymptoms from "../component/AddSymptoms";
+import AddData from "./AddData";
+import HandleData from "./HandleData";
 import AddVets from "../component/AddVets";
 import { useState } from "react";
 import Link from "next/link";
@@ -17,8 +17,8 @@ export default function DashboardLayout() {
         return <AddAnimal />;
       case "addData":
         return <AddData />;
-      case "symptoms":
-        return <AddSymptoms />;
+      case "handledata":
+        return <HandleData />;
       case "vets":
         return <AddVets />;
     }
@@ -65,13 +65,13 @@ export default function DashboardLayout() {
 
             <button
                className={`h-10 border rounded-lg cursor-pointer   text-black  mt-2 mb-2 transition ${
-                activePage === "symptoms"
+                activePage === "handledata"
                   ? "bg-[#4a8068] text-white"
                   : "text-black hover:bg-white"
               }`}
-              onClick={() => handleButton("symptoms")}
+              onClick={() => handleButton("handledata")}
             >
-              Symptoms
+              HandleData
             </button>
             <button
              className={`h-10 border rounded-lg cursor-pointer    mt-2 mb-2 transition ${

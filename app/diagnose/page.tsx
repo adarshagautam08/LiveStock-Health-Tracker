@@ -7,9 +7,9 @@ export default async function Diagnose()
   
   return (
     
-    <div className="bg-white text-black " >
+    <div className="bg-white overflow-y-auto text-black " >
       <UserNavbar/>
-    <div className=' flex  h-screen flex-col '>
+    <div className=' flex  h-screen  flex-col '>
       <DiagnoseAnimal myList={animals}  />
     </div>
     </div>

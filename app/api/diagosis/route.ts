@@ -33,7 +33,7 @@ export async function POST(request:NextRequest)
        )
        const score = (matched.length / disease.symptom.length) * 100
        return { ...disease, score }
-        })
+        }).filter(disease=>disease.score>25)
         console.log(scored)
     return NextResponse.json({ results:scored }, { status: 200 })
         

@@ -34,7 +34,7 @@ export default function VetPage() {
     : [];
 
   return (
-    <div>
+    <div className="bg-white h-screen" >
       <div className="bg-[#2D6A4F] h-20 flex flex-col px-4 justify-center items-center">
         <h1 className="text-2xl text-white">Find a Vet</h1>
         <p className="text-gray-300 text-sm">
