@@ -17,7 +17,7 @@ type Disease = {
   severity: string;
 };
 
-export default function HandleData() {
+export default function   HandleData() {
   const [animal, setAnimal] = useState<Animal[]>([]);
   const [selected, setSelected] = useState<string | null>(null);
   const [alldisease, setalldisease] = useState<Disease[]>([]);

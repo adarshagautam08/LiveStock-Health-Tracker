@@ -87,7 +87,7 @@ export default function DashboardLayout() {
         </div>
 
         {/**main */}
-        <div className="w-[90%]  rounded-2xl bg-gray-100 m-2   px-2 py-2">{renderPage()}</div>
+        <div className="w-[90%]  rounded-2xl bg-gray-100 m-2 overflow-y-auto   px-2 py-2">{renderPage()}</div>
       </div>
     </div>
   );
