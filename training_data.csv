@@ -1,0 +1,215 @@
+animal,symptoms,disease
+Cow,fever|excessive salivation|blisters on mouth|lameness|blisters on hooves,Foot and Mouth Disease
+Cow,fever|blisters on tongue|drooling|reluctance to walk|weight loss,Foot and Mouth Disease
+Cow,mouth ulcers|hoof lesions|nasal discharge|reduced milk production|fever,Foot and Mouth Disease
+Cow,salivation|blisters on feet|fever|loss of appetite|painful walking,Foot and Mouth Disease
+Cow,blister on lips|fever|lameness|nasal discharge|drooling,Foot and Mouth Disease
+Cow,fever|cracked hooves|mouth blisters|reduced feed intake|drooling,Foot and Mouth Disease
+Cow,painful hooves|salivation|fever|mouth lesions|weight loss,Foot and Mouth Disease
+Cow,blisters on gums|fever|lameness|nasal discharge|loss of appetite,Foot and Mouth Disease
+Cow,fever|mouth erosions|hoof inflammation|drooling|reduced milk,Foot and Mouth Disease
+Cow,reluctance to stand|mouth blisters|fever|excessive drooling|nasal discharge,Foot and Mouth Disease
+Cow,fever|nasal discharge|coughing|difficulty breathing|lethargy,Bovine Respiratory Disease
+Cow,labored breathing|coughing|fever|nasal discharge|reduced appetite,Bovine Respiratory Disease
+Cow,runny nose|coughing|high fever|weight loss|lethargy,Bovine Respiratory Disease
+Cow,pneumonia|fever|coughing|nasal discharge|depression,Bovine Respiratory Disease
+Cow,difficulty breathing|fever|nasal discharge|coughing|loss of appetite,Bovine Respiratory Disease
+Cow,wheezing|fever|nasal discharge|coughing|weakness,Bovine Respiratory Disease
+Cow,rapid breathing|fever|coughing|nasal discharge|reduced feed intake,Bovine Respiratory Disease
+Cow,chest pain|coughing|fever|nasal discharge|lethargy,Bovine Respiratory Disease
+Cow,rattling breath|fever|coughing|nasal discharge|weight loss,Bovine Respiratory Disease
+Cow,fever|open mouth breathing|coughing|nasal discharge|weakness,Bovine Respiratory Disease
+Cow,bloody diarrhea|fever|loss of appetite|weakness|dehydration,Hemorrhagic Septicemia
+Cow,sudden death|high fever|difficulty breathing|swollen throat|nasal discharge,Hemorrhagic Septicemia
+Cow,swollen lymph nodes|fever|labored breathing|nasal discharge|drooling,Hemorrhagic Septicemia
+Cow,high fever|depression|swollen neck|difficult swallowing|bloody discharge,Hemorrhagic Septicemia
+Cow,fever|swollen throat|breathing difficulty|nasal discharge|weakness,Hemorrhagic Septicemia
+Cow,swollen jaw|high fever|nasal discharge|difficulty breathing|lethargy,Hemorrhagic Septicemia
+Cow,fever|rapid death|swollen neck|bloody nasal discharge|weakness,Hemorrhagic Septicemia
+Cow,high fever|swollen lymph nodes|breathing difficulty|drooling|depression,Hemorrhagic Septicemia
+Cow,sudden death|bloody diarrhea|high fever|swollen body|weakness,Anthrax
+Cow,fever|swollen lymph nodes|bloody discharge|weakness|sudden collapse,Anthrax
+Cow,high fever|bloody nasal discharge|swollen neck|rapid death|trembling,Anthrax
+Cow,edema|bloody diarrhea|fever|convulsions|sudden death,Anthrax
+Cow,sudden high fever|bloody discharge from body openings|weakness|rapid death|trembling,Anthrax
+Cow,swollen body|high fever|bloody diarrhea|sudden death|weakness,Anthrax
+Cow,reduced milk|fever|udder swelling|painful udder|watery milk,Mastitis
+Cow,hot swollen udder|reduced milk production|fever|abnormal milk|loss of appetite,Mastitis
+Cow,clots in milk|udder hardness|fever|painful teats|lethargy,Mastitis
+Cow,watery milk|udder inflammation|fever|reduced production|weakness,Mastitis
+Cow,hard udder quarters|fever|blood in milk|pain on touching udder|reduced milk,Mastitis
+Cow,swollen teat|fever|abnormal milk color|pain|reduced milk production,Mastitis
+Cow,udder redness|fever|clotted milk|loss of appetite|lethargy,Mastitis
+Cow,loss of appetite|weight loss|weakness|pale mucous membranes|chronic cough,Bovine Tuberculosis
+Cow,chronic cough|weight loss|fever|weakness|enlarged lymph nodes,Bovine Tuberculosis
+Cow,gradual weight loss|chronic cough|fever|reduced milk|weakness,Bovine Tuberculosis
+Cow,persistent cough|weight loss|lethargy|reduced appetite|enlarged neck lymph nodes,Bovine Tuberculosis
+Cow,emaciation|chronic cough|fever|weakness|nasal discharge,Bovine Tuberculosis
+Cow,weight loss|diarrhea|weakness|pale gums|rough coat,Bovine Fasciolosis
+Cow,anemia|weight loss|bottle jaw|diarrhea|weakness,Bovine Fasciolosis
+Cow,bottle jaw|weakness|pale eyelids|diarrhea|weight loss,Bovine Fasciolosis
+Cow,rough coat|weight loss|anemia|diarrhea|lethargy,Bovine Fasciolosis
+Cow,pale gums|weight loss|weakness|diarrhea|reduced milk,Bovine Fasciolosis
+Buffalo,fever|excessive salivation|blisters on mouth|lameness|blisters on hooves,Foot and Mouth Disease
+Buffalo,mouth ulcers|hoof lesions|drooling|fever|reluctance to walk,Foot and Mouth Disease
+Buffalo,blisters on tongue|nasal discharge|fever|salivation|lameness,Foot and Mouth Disease
+Buffalo,fever|painful walking|mouth sores|drooling|reduced appetite,Foot and Mouth Disease
+Buffalo,cracked hooves|mouth blisters|fever|salivation|weight loss,Foot and Mouth Disease
+Buffalo,blisters on gums|fever|lameness|drooling|loss of appetite,Foot and Mouth Disease
+Buffalo,fever|mouth erosions|hoof inflammation|drooling|reduced milk,Foot and Mouth Disease
+Buffalo,reluctance to stand|mouth blisters|fever|excessive drooling|nasal discharge,Foot and Mouth Disease
+Buffalo,painful hooves|salivation|fever|mouth lesions|weight loss,Foot and Mouth Disease
+Buffalo,fever|hoof lesions|mouth ulcers|nasal discharge|lethargy,Foot and Mouth Disease
+Buffalo,fever|skin nodules|nasal discharge|swollen lymph nodes|lethargy,Lumpy Skin Disease
+Buffalo,skin lumps|fever|nasal discharge|swollen lymph nodes|weight loss,Lumpy Skin Disease
+Buffalo,nodular skin lesions|fever|reduced milk|swollen lymph nodes|lethargy,Lumpy Skin Disease
+Buffalo,skin lumps all over body|fever|nasal discharge|eye discharge|loss of appetite,Lumpy Skin Disease
+Buffalo,hard skin nodules|fever|swollen legs|nasal discharge|depression,Lumpy Skin Disease
+Buffalo,raised skin bumps|fever|nasal discharge|swollen lymph nodes|reduced milk,Lumpy Skin Disease
+Buffalo,skin nodules on neck|fever|eye discharge|nasal discharge|lethargy,Lumpy Skin Disease
+Buffalo,crusty skin nodules|fever|loss of appetite|nasal discharge|weakness,Lumpy Skin Disease
+Buffalo,fever|skin lesions|swollen lymph nodes|nasal discharge|weight loss,Lumpy Skin Disease
+Buffalo,multiple skin nodules|high fever|nasal discharge|eye discharge|depression,Lumpy Skin Disease
+Buffalo,fever|nasal discharge|coughing|difficulty breathing|weakness,Bovine Respiratory Disease
+Buffalo,labored breathing|coughing|fever|nasal discharge|loss of appetite,Bovine Respiratory Disease
+Buffalo,runny nose|coughing|high fever|lethargy|weight loss,Bovine Respiratory Disease
+Buffalo,wheezing|fever|coughing|nasal discharge|reduced appetite,Bovine Respiratory Disease
+Buffalo,rapid breathing|fever|coughing|nasal discharge|weakness,Bovine Respiratory Disease
+Buffalo,chest rattling|coughing|fever|nasal discharge|depression,Bovine Respiratory Disease
+Buffalo,high fever|depression|swollen neck|difficulty breathing|nasal discharge,Hemorrhagic Septicemia
+Buffalo,sudden death|high fever|swollen throat|labored breathing|bloody nasal discharge,Hemorrhagic Septicemia
+Buffalo,fever|swollen lymph nodes|labored breathing|drooling|nasal discharge,Hemorrhagic Septicemia
+Buffalo,swollen jaw|high fever|nasal discharge|difficulty breathing|lethargy,Hemorrhagic Septicemia
+Buffalo,fever|rapid death|swollen neck|bloody discharge|weakness,Hemorrhagic Septicemia
+Buffalo,high fever|swollen neck|breathing difficulty|depression|bloody nasal discharge,Hemorrhagic Septicemia
+Buffalo,reduced milk|fever|udder swelling|painful udder|abnormal milk,Mastitis
+Buffalo,hot swollen udder|clots in milk|fever|lethargy|loss of appetite,Mastitis
+Buffalo,watery milk|udder inflammation|fever|painful teats|reduced production,Mastitis
+Buffalo,hard udder|fever|blood in milk|pain|reduced milk production,Mastitis
+Buffalo,swollen teat|fever|abnormal milk|loss of appetite|lethargy,Mastitis
+Buffalo,udder redness|fever|clotted milk|weakness|reduced milk,Mastitis
+Buffalo,chronic cough|weight loss|fever|weakness|enlarged lymph nodes,Bovine Tuberculosis
+Buffalo,gradual weight loss|chronic cough|pale mucous membranes|fever|reduced milk,Bovine Tuberculosis
+Buffalo,persistent cough|weight loss|lethargy|reduced appetite|enlarged neck lymph nodes,Bovine Tuberculosis
+Buffalo,emaciation|chronic cough|fever|weakness|nasal discharge,Bovine Tuberculosis
+Buffalo,weight loss|diarrhea|anemia|weakness|bottle jaw,Bovine Fasciolosis
+Buffalo,pale mucous membranes|weight loss|diarrhea|weakness|rough coat,Bovine Fasciolosis
+Buffalo,bottle jaw|weakness|pale eyelids|diarrhea|weight loss,Bovine Fasciolosis
+Buffalo,rough coat|weight loss|anemia|diarrhea|lethargy,Bovine Fasciolosis
+Goat,fever|sneezing|nasal discharge|mouth sores|coughing,Peste des Petits Ruminants
+Goat,high fever|eye discharge|diarrhea|nasal discharge|pneumonia,Peste des Petits Ruminants
+Goat,fever|mouth ulcers|nasal discharge|diarrhea|difficulty breathing,Peste des Petits Ruminants
+Goat,coughing|fever|nasal discharge|mouth lesions|lethargy,Peste des Petits Ruminants
+Goat,diarrhea|fever|eye discharge|nasal discharge|weight loss,Peste des Petits Ruminants
+Goat,high fever|crusty eyes|mouth erosions|diarrhea|coughing,Peste des Petits Ruminants
+Goat,fever|nasal discharge|mouth sores|labored breathing|weakness,Peste des Petits Ruminants
+Goat,sneezing|fever|eye discharge|diarrhea|loss of appetite,Peste des Petits Ruminants
+Goat,fever|mouth ulcers|coughing|nasal discharge|depression,Peste des Petits Ruminants
+Goat,diarrhea|high fever|nasal discharge|mouth lesions|weight loss,Peste des Petits Ruminants
+Goat,fever|blisters on mouth|lameness|salivation|hoof lesions,Foot and Mouth Disease
+Goat,mouth ulcers|fever|reluctance to walk|blisters on hooves|drooling,Foot and Mouth Disease
+Goat,blisters on lips|fever|lameness|excessive salivation|nasal discharge,Foot and Mouth Disease
+Goat,painful hooves|mouth blisters|fever|salivation|weight loss,Foot and Mouth Disease
+Goat,hoof lesions|mouth sores|fever|drooling|loss of appetite,Foot and Mouth Disease
+Goat,fever|cracked hooves|mouth blisters|salivation|reduced appetite,Foot and Mouth Disease
+Goat,fever|diarrhea|weight loss|weakness|loss of appetite,Caprine Enterotoxemia
+Goat,sudden death|convulsions|bloating|diarrhea|fever,Caprine Enterotoxemia
+Goat,abdominal pain|diarrhea|fever|weakness|sudden death,Caprine Enterotoxemia
+Goat,bloating|convulsions|diarrhea|loss of appetite|sudden death,Caprine Enterotoxemia
+Goat,sudden death|bloody diarrhea|convulsions|abdominal pain|fever,Caprine Enterotoxemia
+Goat,severe diarrhea|abdominal pain|weakness|fever|sudden death,Caprine Enterotoxemia
+Goat,fever|nasal discharge|coughing|difficulty breathing|lethargy,Caprine Respiratory Disease
+Goat,labored breathing|coughing|fever|nasal discharge|weight loss,Caprine Respiratory Disease
+Goat,runny nose|coughing|high fever|lethargy|loss of appetite,Caprine Respiratory Disease
+Goat,wheezing|fever|nasal discharge|coughing|weakness,Caprine Respiratory Disease
+Goat,rapid breathing|fever|coughing|nasal discharge|reduced appetite,Caprine Respiratory Disease
+Goat,chest rattling|coughing|fever|nasal discharge|depression,Caprine Respiratory Disease
+Goat,fever|skin scabs|hair loss|itching|crusty lesions,Goat Pox
+Goat,skin blisters|fever|nasal discharge|swollen lymph nodes|weight loss,Goat Pox
+Goat,pox lesions on skin|fever|eye discharge|nasal discharge|lethargy,Goat Pox
+Goat,crusty skin lesions|fever|loss of appetite|nasal discharge|weakness,Goat Pox
+Goat,raised skin bumps|fever|nasal discharge|eye discharge|lethargy,Goat Pox
+Goat,skin nodules|fever|crusty eyes|nasal discharge|weight loss,Goat Pox
+Goat,bloating|abdominal discomfort|loss of appetite|diarrhea|weakness,Bloat
+Goat,swollen abdomen|discomfort|loss of appetite|difficulty breathing|weakness,Bloat
+Goat,distended rumen|pain|loss of appetite|lethargy|difficulty breathing,Bloat
+Goat,abdominal swelling|restlessness|loss of appetite|weakness|labored breathing,Bloat
+Goat,weight loss|diarrhea|weakness|pale gums|bottle jaw,Haemonchosis
+Goat,pale mucous membranes|bottle jaw|weakness|diarrhea|weight loss,Haemonchosis
+Goat,anemia|weight loss|weakness|diarrhea|pale gums,Haemonchosis
+Goat,bottle jaw|weakness|pale eyelids|diarrhea|weight loss,Haemonchosis
+Goat,pale conjunctiva|weakness|weight loss|diarrhea|rough coat,Haemonchosis
+Goat,anemia|bottle jaw|lethargy|weight loss|diarrhea,Haemonchosis
+Pig,high fever|red skin patches|loss of appetite|vomiting|weakness,African Swine Fever
+Pig,sudden death|high fever|skin hemorrhage|bloody diarrhea|weakness,African Swine Fever
+Pig,fever|skin redness|loss of appetite|weakness|difficulty breathing,African Swine Fever
+Pig,hemorrhagic skin patches|high fever|vomiting|diarrhea|sudden death,African Swine Fever
+Pig,fever|skin discoloration|rapid death|loss of appetite|weakness,African Swine Fever
+Pig,high fever|bleeding from skin|sudden death|diarrhea|loss of appetite,African Swine Fever
+Pig,fever|skin blotches|vomiting|weakness|sudden death,African Swine Fever
+Pig,skin hemorrhage|high fever|bloody stool|loss of appetite|rapid death,African Swine Fever
+Pig,fever|dark skin patches|weakness|diarrhea|loss of appetite,African Swine Fever
+Pig,sudden death|high fever|skin redness|bloody diarrhea|weakness,African Swine Fever
+Pig,fever|blisters on snout|lameness|blisters on feet|salivation,Foot and Mouth Disease
+Pig,mouth blisters|hoof lesions|fever|reluctance to walk|loss of appetite,Foot and Mouth Disease
+Pig,blisters on feet|fever|salivation|lameness|nasal discharge,Foot and Mouth Disease
+Pig,snout blisters|fever|painful walking|salivation|loss of appetite,Foot and Mouth Disease
+Pig,hoof lesions|mouth blisters|fever|drooling|weight loss,Foot and Mouth Disease
+Pig,fever|cracked hooves|snout blisters|salivation|reduced appetite,Foot and Mouth Disease
+Pig,coughing|sneezing|fever|nasal discharge|difficulty breathing,Swine Influenza
+Pig,high fever|coughing|nasal discharge|lethargy|loss of appetite,Swine Influenza
+Pig,labored breathing|coughing|fever|nasal discharge|depression,Swine Influenza
+Pig,sneezing|coughing|fever|weight loss|nasal discharge,Swine Influenza
+Pig,rapid breathing|fever|coughing|nasal discharge|weakness,Swine Influenza
+Pig,wheezing|fever|sneezing|nasal discharge|loss of appetite,Swine Influenza
+Pig,fever|runny nose|coughing|lethargy|reduced feed intake,Swine Influenza
+Pig,diarrhea|vomiting|loss of appetite|weakness|dehydration,Swine Dysentery
+Pig,bloody diarrhea|fever|abdominal pain|loss of appetite|weakness,Swine Dysentery
+Pig,mucous diarrhea|fever|weight loss|dehydration|lethargy,Swine Dysentery
+Pig,diarrhea|abdominal pain|fever|loss of appetite|weakness,Swine Dysentery
+Pig,watery diarrhea|vomiting|dehydration|weakness|loss of appetite,Swine Dysentery
+Pig,bloody stool|abdominal pain|fever|lethargy|weight loss,Swine Dysentery
+Pig,fever|skin redness|lethargy|loss of appetite|joint swelling,Swine Erysipelas
+Pig,diamond shaped skin lesions|fever|joint pain|loss of appetite|lethargy,Swine Erysipelas
+Pig,skin lesions|high fever|lameness|reduced appetite|depression,Swine Erysipelas
+Pig,raised skin patches|fever|joint swelling|loss of appetite|weakness,Swine Erysipelas
+Pig,fever|skin discoloration|lameness|lethargy|loss of appetite,Swine Erysipelas
+Chicken,sudden death|dark combs|breathing difficulty|swollen head|lethargy,Newcastle Disease
+Chicken,gasping|twisted neck|diarrhea|breathing difficulty|sudden death,Newcastle Disease
+Chicken,greenish diarrhea|breathing difficulty|swollen head|drop in egg production|lethargy,Newcastle Disease
+Chicken,trembling|twisted neck|paralysis|breathing difficulty|greenish diarrhea,Newcastle Disease
+Chicken,sudden death|gasping|swollen head|dark purple combs|loss of appetite,Newcastle Disease
+Chicken,neck twisting|paralysis|diarrhea|breathing difficulty|sudden death,Newcastle Disease
+Chicken,drop in egg production|breathing difficulty|greenish diarrhea|swollen head|lethargy,Newcastle Disease
+Chicken,gasping|dark combs|twisted neck|diarrhea|weakness,Newcastle Disease
+Chicken,sudden death|respiratory distress|greenish diarrhea|swollen head|trembling,Newcastle Disease
+Chicken,breathing difficulty|twisted neck|drop in egg production|diarrhea|lethargy,Newcastle Disease
+Chicken,high mortality|swollen head|breathing difficulty|dark combs|diarrhea,Avian Influenza
+Chicken,sudden death|nasal discharge|swollen face|difficulty breathing|diarrhea,Avian Influenza
+Chicken,swollen combs and wattles|nasal discharge|diarrhea|breathing difficulty|sudden death,Avian Influenza
+Chicken,dark purple head|difficulty breathing|nasal discharge|diarrhea|drop in egg production,Avian Influenza
+Chicken,fever|swollen face|nasal discharge|breathing difficulty|high mortality,Avian Influenza
+Chicken,sudden death|swollen head|nasal discharge|diarrhea|breathing difficulty,Avian Influenza
+Chicken,high mortality|nasal discharge|swollen wattles|diarrhea|lethargy,Avian Influenza
+Chicken,swollen face|dark combs|nasal discharge|difficulty breathing|sudden death,Avian Influenza
+Chicken,diarrhea|nasal discharge|swollen head|breathing difficulty|weakness,Avian Influenza
+Chicken,sudden death|swollen combs|nasal discharge|difficulty breathing|drop in egg production,Avian Influenza
+Chicken,swollen face|nasal discharge|sneezing|watery eyes|coughing,Infectious Bronchitis
+Chicken,coughing|sneezing|nasal discharge|drop in egg production|watery eyes,Infectious Bronchitis
+Chicken,rattling breathing|sneezing|nasal discharge|reduced egg production|lethargy,Infectious Bronchitis
+Chicken,watery eyes|sneezing|coughing|nasal discharge|drop in egg production,Infectious Bronchitis
+Chicken,sneezing|rattling sound|nasal discharge|watery eyes|reduced egg production,Infectious Bronchitis
+Chicken,coughing|watery eyes|sneezing|drop in egg production|lethargy,Infectious Bronchitis
+Chicken,nasal discharge|sneezing|coughing|reduced egg production|weakness,Infectious Bronchitis
+Chicken,white diarrhea|weakness|loss of appetite|ruffled feathers|lethargy,Salmonellosis
+Chicken,diarrhea|weakness|loss of appetite|ruffled feathers|dehydration,Salmonellosis
+Chicken,white pasty droppings|weakness|lethargy|loss of appetite|huddling,Salmonellosis
+Chicken,weakness|diarrhea|loss of appetite|ruffled feathers|sudden death in chicks,Salmonellosis
+Chicken,watery diarrhea|weakness|ruffled feathers|loss of appetite|lethargy,Salmonellosis
+Chicken,pasty vent|weakness|loss of appetite|huddling|lethargy,Salmonellosis
+Chicken,bloody diarrhea|lethargy|ruffled feathers|loss of appetite|pale combs,Coccidiosis
+Chicken,bloody droppings|weakness|loss of appetite|ruffled feathers|dehydration,Coccidiosis
+Chicken,diarrhea with blood|lethargy|ruffled feathers|loss of appetite|huddling,Coccidiosis
+Chicken,pale combs|bloody diarrhea|lethargy|reduced appetite|ruffled feathers,Coccidiosis
+Chicken,blood in droppings|weakness|ruffled feathers|loss of appetite|lethargy,Coccidiosis
+Chicken,bloody stool|pale combs|weakness|loss of appetite|huddling,Coccidiosis
