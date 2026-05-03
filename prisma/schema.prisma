@@ -51,3 +51,10 @@ model Vet{
   address String
   district String
 }
+model TrainingData {
+  id       String @id @default(cuid())
+  animal   String
+  symptoms String
+  disease  String
+}
+

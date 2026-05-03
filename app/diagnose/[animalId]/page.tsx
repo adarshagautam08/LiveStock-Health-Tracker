@@ -126,7 +126,7 @@ export default function DiagnosePage() {
                   <div className="flex items-center justify-between mb-1">
                     <span className="text-xs text-gray-400">Symptom match</span>
                     <span className="text-xs font-medium text-[#2D6A4F]">
-                      {Math.round(disease.score)}%
+                      {disease.score}%
                     </span>
                   </div>
                   <div className="h-1.5 bg-gray-100 rounded-full overflow-hidden">
